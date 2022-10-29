@@ -359,6 +359,7 @@ class TibberHome:
 
     def current_price_data(self) -> tuple[float, str, dt.datetime]:
         """Get current price."""
+        print("Getting current price data")
         price_time = (
             dt.datetime.now()
             .replace(minute=0, second=0, microsecond=0)
